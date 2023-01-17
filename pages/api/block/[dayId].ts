@@ -3,8 +3,6 @@ import { UpdateQuery } from "mongoose";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Database } from "sqlite3";
 import { getDBConnection } from "../../../db/connect";
-import connectDB from "../../../lib/dbConnection";
-import Asset from "../../../models/Asset";
 import { ResponseData, StatusCode } from "../../../types";
 import { deleteFile } from "../file";
 

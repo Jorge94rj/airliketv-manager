@@ -1,5 +1,3 @@
-import Asset from './models/Asset';
-import User from './models/User';
 
 export const dayNames = {
   0: 'Monday',
@@ -26,14 +24,6 @@ export interface ResponseData {
   error?: unknown;
   message?: string;
 };
-
-export interface UserResponseData extends ResponseData {
-  user: typeof User;
-}
-
-export interface AssetResponseData extends ResponseData {
-  asset: typeof Asset;
-}
 
 export type AssetType = 'image' | 'model';
 
