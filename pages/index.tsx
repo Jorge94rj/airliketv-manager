@@ -2,7 +2,6 @@ import Head from 'next/head';
 import Card from '../components/Card';
 import Settings from '../components/Settings';
 import styles from '../styles/Home.module.css';
-import { Container } from './index.style';
 
 export default function Home() {
 

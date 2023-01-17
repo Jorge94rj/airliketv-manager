@@ -4,7 +4,7 @@ import { DynamicModal } from "../../../components/Modal"
 import SaveBlockModal from "../../../components/SaveBlockModal"
 import { Button } from "../../../styles/form.style"
 import { dayNames, IBlock } from "../../../types"
-import { ActionHeader, BlockItem, BlockList, LeftContent, RightContent } from "../index.style"
+import { ActionHeader, BlockItem, BlockList, LeftContent, RightContent } from "../../../styled-components/block.style"
 
 const Block = () => {
   const router = useRouter();
