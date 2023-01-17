@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { AssetItem, AssetList } from './index.style';
+import { AssetItem, AssetList } from '../../styled-components/week.style';
 import { dayNames, IDay } from '../../types';
 import Card from '../../components/Card';
 import Image from 'next/image';
