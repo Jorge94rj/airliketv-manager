@@ -41,6 +41,11 @@ export const CardContainer = styled.div<{ clickable?: boolean }>`
     line-height: 1.5;
     color: gray;
   }
+
+
+  @media (min-width: 768px) {
+    max-width: 330px;
+  }
 `
 
 export const IconWrapper = styled.div<{ noMargin?: boolean }>`

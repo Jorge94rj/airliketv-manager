@@ -7,6 +7,8 @@ import PedroParamo from '../public/pedro.svg';
 import Milnov from '../public/milnov.svg';
 import { MainHeader } from '../styles/index.style';
 import BookCard from '../components/BookCard';
+import { useEffect, useState } from 'react';
+import { Container } from '../styled-components/index.style';
 
 export const books = [
   {
@@ -44,6 +46,15 @@ export const books = [
 
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+  
+  useEffect(() => {
+    console.log(window.innerWidth);
+    const isMobileSize = !(window.innerWidth > 768);
+    setIsMobile(isMobileSize);
+    console.log('isMobile', isMobile)
+  }, []);
+
   return (
     <>
       <div className={styles.container}>
@@ -56,9 +67,21 @@ export default function Home() {
           <h4>Biblioteca</h4>
           <h2>Clásicos</h2>
           {
-            books.map(b => (
-              <BookCard key={b.id} {...b}/>
+            isMobile && books.map(b => (
+              <BookCard key={b.id} {...b} />
             ))
+          }
+          {
+            !isMobile && 
+            <>
+              <Container>
+                  {  
+                    books.map(b => (
+                      <BookCard key={b.id} {...b} />
+                    )) 
+                  }
+              </Container>
+            </>
           }
         </MainHeader>
       </div>

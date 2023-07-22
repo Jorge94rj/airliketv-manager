@@ -30,6 +30,10 @@ export const PillButton = styled.button`
   border-radius: 30px;
   padding: 16px;
   margin: 24px 0;
+
+  @media (min-width: 768px) {
+    max-width: 128px;
+  }
 `;
 
 export const CloseButton = styled.button`
