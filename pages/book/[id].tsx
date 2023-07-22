@@ -5,7 +5,6 @@ import { CloseButton, MainHeader, PdfWrapper, PillButton } from "../../styles/in
 import Image from "next/image";
 import { CardContainer } from "../../components/BookCard/index.style";
 import { Document, Page } from 'react-pdf';
-import AllPages from "../../components/PdfViewer";
 
 const Book = () => {
   const router = useRouter();
