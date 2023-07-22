@@ -24,6 +24,17 @@ export const NavbarWrapper = styled.div`
   background: #0A7519;
   align-items: center;
   justify-content: center;
+  ul {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    li {
+      padding: 16px;
+    }
+  }
+
   @media (max-width: 768px) {
     display: none;
   }

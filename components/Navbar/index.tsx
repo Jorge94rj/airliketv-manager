@@ -62,7 +62,13 @@ const Navbar = () => {
         />
       </LogoWrapper>
       <MenuWrapper>
-        Menu Wrapper
+        <ul>
+          <li>Biblioteca</li>
+          <li>Contactos</li>
+          <li>Clubs</li>
+          <li>Publicaciones</li>
+          <li>Peticiones</li>
+        </ul>
       </MenuWrapper>
       <ProfileWrapper>
         {
