@@ -28,6 +28,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-modal": "^3.16.1",
+    "react-pdf": "^7.2.0",
     "react-three-fiber": "^6.0.13",
     "sqlite3": "^5.1.4",
     "styled-components": "^5.3.6",
